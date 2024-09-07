@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicar Aplicativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Publicar Novo Aplicativo</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="publicar.html">Publicar Aplicativo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="publicar-form">
+            <h2>Detalhes do Aplicativo</h2>
+            <form id="appForm">
+                <label for="appName">Nome do Aplicativo:</label>
+                <input type="text" id="appName" name="appName" required>
+
+                <label for="appGenre">Gênero:</label>
+                <select id="appGenre" name="appGenre" required>
+                    <option value="jogos">Jogos</option>
+                    <option value="produtividade">Produtividade</option>
+                    <option value="educacao">Educação</option>
+                    <option value="social">Social</option>
+                </select>
+
+                <label for="appDescription">Descrição:</label>
+                <textarea id="appDescription" name="appDescription" rows="4" required></textarea>
+
+                <label for="appImage1">Imagem 1:</label>
+                <input type="file" id="appImage1" name="appImage1" accept="image/*" required>
+
+                <label for="appImage2">Imagem 2:</label>
+                <input type="file" id="appImage2" name="appImage2" accept="image/*" required>
+
+                <label for="appComments">Comentários:</label>
+                <textarea id="appComments" name="appComments" rows="2" placeholder="Deixe um comentário"></textarea>
+
+                <button type="submit">Publicar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Loja de Aplicativos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

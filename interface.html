@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Apps</title>
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        .top-bar {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .top-bar input {
+            flex: 2;
+            padding: 10px;
+            margin-left: 10px;
+            border-radius: 20px;
+            border: 1px solid white;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .top-bar img {
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            margin-left: 10px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            padding: 15px;
+            background-color: white;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .apps-row {
+            display: flex;
+            padding: 15px;
+            background-color: white;
+            overflow-x: auto;
+            gap: 20px;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .apps-row img {
+            width: 80px;
+            height: 80px;
+            border-radius: 20%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .apps-row img:hover {
+            transform: scale(1.1);
+        }
+
+        .bottom-bar {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            background-color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .bottom-bar div {
+            text-align: center;
+            color: gray;
+        }
+
+        .bottom-bar div span {
+            display: block;
+            font-size: 12px;
+        }
+
+        .bottom-bar div img {
+            width: 24px;
+            height: 24px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <input type="text" placeholder="Buscar por apps e Jogos...">
+        <img src="fotoperfil.png" alt="Profile">
+    </div>
+
+    <div class="section-title">Novos e atualizados</div>
+    <div class="apps-row">
+        <img src="Minitv.png" alt="Mini Tv">
+        <img src="appmine.png" alt="Minecraft Seeds">
+        <img src="app3.png" alt="App 3">
+        <img src="app4.png" alt="App 4">
+    </div>
+
+    <div class="section-title">Pré-registros de apps e jogos</div>
+    <div class="apps-row">
+        <img src="app5.png" alt="App 5">
+        <img src="app6.png" alt="App 6">
+        <img src="app7.png" alt="App 7">
+        <img src="hobby.png" alt="App 8">
+    </div>
+
+    <div class="section-title">Sugestão de jogos</div>
+    <div class="apps-row">
+        <img src="app9.png" alt="App 9">
+        <img src="app10.png" alt="App 10">
+    </div>
+
+    <div class="bottom-bar">
+        <div>
+            <img src="home-icon.png" alt="Home">
+            <span>Para você</span>
+        </div>
+        <div>
+            <img src="trending-icon.png" alt="Trending">
+            <span>em alta!!</span>
+        </div>
+        <div> <img src="engrenagem.png" alt="" id="img"> <ul>
+              <li><a id="bruh" href="config.html"</li>
+            </ul><span>Lipescript area</span>
+            <link rel="stylesheet" href="bruh.css"> 
+        </div>
+        <div>
+            <img src="launches-icon.png" alt="Launches">
+            <span>Lançamentos</span>
+            
+        </div>
+    </div>
+</body>
+</html>
